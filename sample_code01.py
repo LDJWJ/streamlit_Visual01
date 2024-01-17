@@ -18,7 +18,7 @@ def load_data(nrows):
 	
 data_load_state = st.text('데이터 로딩중...')
 data = load_data(10000)
-data_load_state.text("완료! (using st.cache)")
+data_load_state.text("완료!")
 	
 if st.checkbox('RAW 데이터 확인'):
     st.subheader('RAW 데이터')
@@ -31,5 +31,5 @@ st.bar_chart(hist_values)
 hour_to_filter = st.slider('시간', 0, 23, 17)
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 	
-st.subheader('일정 시간대의 픽업 지도 : at %s:00' % hour_to_filter)
+st.subheader('일정 시간대의 픽업 지도 : %s:00' % hour_to_filter)
 st.map(filtered_data)
