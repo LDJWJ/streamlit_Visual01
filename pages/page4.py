@@ -56,7 +56,6 @@ st.image(img2, width=300)
 
 # Check Box
 if st.checkbox("Show/Hide"):
- 
     # display the text if the checkbox returns True value
     st.text("Showing the widget")
 

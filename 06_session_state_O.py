@@ -10,10 +10,15 @@ st.title('Counter Example')
 if 'count' not in st.session_state:
     st.session_state['count'] = 0
 
+if 'cnt' not in st.session_state:
+    st.session_state['cnt'] = 1
+
 # Increment 버튼
 increment = st.button('Increment')
 if increment:
     st.session_state['count'] += 1
+    st.session_state['cnt'] *= 2
 
 # Count 출력
 st.write('Count = ', st.session_state['count'])
+st.write('cnt = ', st.session_state['cnt'])
