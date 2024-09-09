@@ -42,7 +42,7 @@ if st.button("전송") and user_input:
                                       "content": response_message})
 
     # 사용자 입력 초기화
-    st.session_state["user_input"] = ""
+    user_input = ""
 
 # 대화 내용 표시
 for message in st.session_state.messages:

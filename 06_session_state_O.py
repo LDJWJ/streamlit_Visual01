@@ -1,4 +1,5 @@
-# Streamlit의 Session State를 사용하면 스크립트 재실행 시에도 상태를 유지할 수 있습니다.
+# Streamlit의 Session State를 사용하면 스크립트 재실행 시에도 
+# 상태를 유지할 수 있습니다.
 # 초기화, 읽기, 업데이트를 통해 Session State를 관리할 수 있습니다.
 # Session State를 사용하면 더 나은 사용자 경험을 제공할 수 있습니다.
 
