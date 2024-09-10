@@ -30,6 +30,8 @@ if st.button("버튼 클릭"):
 option = st.selectbox("옵션을 선택하세요", ["옵션 1", "옵션 2", "옵션 3"])
 st.write(f"선택한 옵션: {option}")
 
+
+
 # 데이터 생성
 data = pd.DataFrame(
     np.random.randn(50, 3),   # 50개 행, 3개열 
@@ -39,14 +41,13 @@ data = pd.DataFrame(
 # 라인 차트
 st.line_chart(data)
 
+
 # 이미지 표시
  
 # pillow가 설치가 되어 있어야 한다.
 from PIL import Image
-
-ori_path = "D:\\github\\streamlit_Visual01"
-img = Image.open(ori_path + "\\dog_01.jpg")   
-img2 = Image.open(ori_path + "\\flower.jpg")
+img = Image.open("dog_01.jpg")   
+img2 = Image.open("01_start.png")
  
 # display image using streamlit
 # width is used to set the width of an image
@@ -55,7 +56,6 @@ st.image(img2, width=300)
 
 # Check Box
 if st.checkbox("Show/Hide"):
- 
     # display the text if the checkbox returns True value
     st.text("Showing the widget")
 
