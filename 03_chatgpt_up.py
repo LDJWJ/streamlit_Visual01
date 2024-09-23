@@ -21,6 +21,7 @@ if not openai_api_key:
     st.stop()
 
 # client = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
+openai_api_key = st.secrets['REPLICATE_KEY']['API_KEY']
 client = OpenAI(api_key  = openai_api_key)
 
 
